@@ -1,9 +1,9 @@
 <ul class="nav nav-tabs" role="navigation">
-    <li {% if page.tab == "Home" %} class="active" {% endif %}><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
-    <li {% if page.tab == "About" %} class="active" {% endif %}><a href="{{ "/about.html" | prepend: site.baseurl }}">About</a></li>
-    <li {% if page.tab == "Features" %} class="active" {% endif %}><a href="{{ "/features.html" | prepend: site.baseurl }}">Features</a></li>
-    <li {% if page.tab == "Screenshots" %} class="active" {% endif %}><a href="{{ "/screenshots.html" | prepend: site.baseurl }}">Screenshots</a></li>
-    <li {% if page.tab == "Downloads" %} class="active" {% endif %}><a href="{{ "/downloads.html" | prepend: site.baseurl }}">Downloads</a></li>
-    <li {% if page.tab == "Manual" %} class="active" {% endif %}><a href="{{ "/manual.html" | prepend: site.baseurl }}">Manual</a></li>
-    <li {% if page.tab == "Contribute" %} class="active" {% endif %}><a href="{{ "/contribute.html" | prepend: site.baseurl }}">Contribute</a></li>
+    <li {% if page.tab == "Home" %} class="active" {% endif %}><a href="{{ "/" | prepend: site.url }}">Home</a></li>
+    <li {% if page.tab == "About" %} class="active" {% endif %}><a href="{{ "/about.html" | prepend: site.url }}">About</a></li>
+    <li {% if page.tab == "Features" %} class="active" {% endif %}><a href="{{ "/features.html" | prepend: site.url }}">Features</a></li>
+    <li {% if page.tab == "Screenshots" %} class="active" {% endif %}><a href="{{ "/screenshots.html" | prepend: site.url }}">Screenshots</a></li>
+    <li {% if page.tab == "Downloads" %} class="active" {% endif %}><a href="{{ "/downloads.html" | prepend: site.url }}">Downloads</a></li>
+    <li {% if page.tab == "Manual" %} class="active" {% endif %}><a href="{{ "/manual.html" | prepend: site.url }}">Manual</a></li>
+    <li {% if page.tab == "Contribute" %} class="active" {% endif %}><a href="{{ "/contribute.html" | prepend: site.url }}">Contribute</a></li>
 </ul>
