@@ -48,9 +48,6 @@ Author: Viktor Persson, Arcsin (http://arcsin.se/)
 #qwnet_forums {background-position: -49px -70px;}
 .qwnet_current#qwnet_forums,a#qwnet_forums:hover {background-position: 0 -70px;}
 
-#qwnet_sd {background-position: -49px -84px;}
-.qwnet_current#qwnet_sd,a#qwnet_sd:hover {background-position: 0 -84px;}
-
 #qwnet_eql {background-position: -49px -98px;}
 .qwnet_current#qwnet_eql,a#qwnet_eql:hover {background-position: 0 -98px;}
 
@@ -63,26 +60,14 @@ Author: Viktor Persson, Arcsin (http://arcsin.se/)
 #qwnet_qtv {background-position: -49px -140px;}
 .qwnet_current#qwnet_qtv,a#qwnet_qtv:hover {background-position: 0 -140px;}
 
-#qwnet_schedule {background-position: -49px -154px;}
-.qwnet_current#qwnet_schedule,a#qwnet_schedule:hover {background-position: 0 -154px;}
-
 #qwnet_goldrush {background-position: -49px -168px;}
 .qwnet_current#qwnet_goldrush,a#qwnet_goldrush:hover {background-position: 0 -168px;}
-
-#qwnet_chtv {background-position: -49px -182px;}
-.qwnet_current#qwnet_chtv,a#qwnet_chtv:hover {background-position: 0 -182px;}
 
 #qwnet_gfx {background-position: -49px -196px;}
 .qwnet_current#qwnet_gfx,a#qwnet_gfx:hover {background-position: 0 -196px;}
 
-#qwnet_videos {background-position: -49px -210px;}
-.qwnet_current#qwnet_videos,a#qwnet_videos:hover {background-position: 0 -210px;}
-
 #qwnet_stats {background-position: -49px -224px;}
 .qwnet_current#qwnet_stats,a#qwnet_stats:hover {background-position: 0 -224px;}
-
-#qwnet_fusion {background-position: -49px -238px;}
-.qwnet_current#qwnet_fusion,a#qwnet_fusion:hover {background-position: 0 -238px;}
 
 #qwnet_ownage {background-position: -49px -252px;}
 .qwnet_current#qwnet_ownage,a#qwnet_ownage:hover {background-position: 0 -252px;}
