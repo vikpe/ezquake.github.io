@@ -1,7 +1,11 @@
-<ul class="nav nav-tabs" role="menu">
-    {% for item in site.data.navigation.main %}
-        <li {% if page.tab == item.title %} class="active" {% endif %}>
-            <a href="{{item.url | relative_url}}">{{item.title}}</a>
-        </li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <div class="tabs" role="menu">
+        <ul>
+            {% for item in site.data.navigation.main %}
+            <li {% if page.tab== item.title %} class="is-active" {% endif %}>
+                <a href="{{item.url | relative_url}}">{{item.title}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
