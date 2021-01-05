@@ -1,9 +1,9 @@
-{% include head.html %}
-{% include header.html %}
+{% include layout/head.html %}
+{% include layout/header.html %}
 <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
-        {% include tabs.html %}
+        {% include layout/tabs.html %}
         {{ content }}
     </section>
 </div>
-{% include footer.html %}
+{% include layout/footer.html %}
