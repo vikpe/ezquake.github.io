@@ -20,6 +20,9 @@ jobs:
       - name: Download help files from ezquake-source
         run: wget -i _data/ezquake/files_to_download.txt -P _data/ezquake
 
+      - name: Parse variables
+        run: (cd _data/ezquake && python parse_variables.py)
+
       - uses: stefanzweifel/git-auto-commit-action@v4
         name: Commit updated help files (if changed)
         with:
