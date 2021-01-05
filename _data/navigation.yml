@@ -15,3 +15,93 @@ main:
     url: /contribute/
   - title: Reference
     url: /reference/
+
+sidebars:
+  manual:
+    - title: Configuration
+      items:
+        - title: Heads-up display
+          url: docs/guides/hud/
+        - title: Crosshairs
+          url: docs/guides/crosshairs/
+        - title: Frag tracker
+          url: docs/guides/frag-tracker/
+        - title: Customising textures
+          url: docs/guides/external-textures/
+        - title: Fonts/charsets
+          url: docs/guides/fonts/
+        - title: Weapon scripts
+          url: docs/guides/weapon-scripts/
+
+    - title: Features
+      items:
+        - title: Voice communication
+          url: docs/guides/voice-supp
+        - title: Multiview demo playbackort/
+          url: docs/guides/multiview/
+        - title: Capturing video
+          url: docs/guides/demo-capt
+        - title: Graphics options
+          url: docs/guides/graphics/
+        - title: Message filtering
+          url: docs/guides/message-filtering/
+        - title: Scripting
+          url: docs/guides/scripting/
+
+    - title: Teamplay
+      items:
+        - title: Player skins
+          url: docs/guides/player-skins/
+        - title: Rules for colored text
+          url: docs/guides/colored-text
+        - title: Macros
+          url: docs/guides/macros/
+        - title: Pointing
+          url: docs/guides/tp-pointing/
+
+    - title: Networking
+      items:
+        - title: Independent physics
+          url: docs/guides/independent-physics/
+        - title: Server Browser
+          url: docs/guides/server-browser/
+
+    - title: Changelogs
+      items:
+        - title: Version 3.2
+          url: docs/guides/changelog-3.2/
+          items:
+            - title: 3.2.2
+              url: docs/guides/changelog-3.2.2/
+        - title: Version 3.1
+          url: docs/guides/changelog-3.1/
+        - title: Version 3.0
+          url: docs/guides/changelog-3.0/
+          items:
+            - title: 3.0.1
+              url: docs/guides/changelog-3.0.1/
+        - title: Guides
+          items:
+            - title: Upgrading from 2.2
+              url: docs/guides/upgrade-from-2.2/
+
+    - title: Reference (console variables)
+      items:
+        - title: Demo playback
+          url: docs/demos/
+        - title: Graphics
+          url: docs/graphics/
+        - title: Heads-up display
+          url: docs/hud/
+        - title: Controls
+          url: docs/input/
+        - title: Multiplayer
+          url: docs/multip
+        - title: Audiolayer/
+          url: docs/sound/
+        - title: Teamplay settings
+          url: docs/teamplay/
+        - title: Miscellaneous
+          url: docs/miscellaneous/
+        - title: Server settings
+          url: docs/server/
