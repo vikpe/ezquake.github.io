@@ -3,6 +3,9 @@ title: ezQuake
 description: "ezQuake - the #1 QuakeWorld client"
 url: https://vikpe.org/ezquake.github.io
 
+# Outputting
+permalink: pretty
+
 # Handling/Reading
 exclude:
   - .idea
