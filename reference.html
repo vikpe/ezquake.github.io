@@ -3,10 +3,10 @@ layout: default
 tab: Reference
 ---
 
-<h1 class="title">help_cmdline_params.json</h1>
+<h1>help_cmdline_params.json</h1>
 
 {% for item in site.data.ezquake.help_cmdline_params %}
-    <h2 class="title">{{item[0]}}</h2>
+    <h2>{{item[0]}}</h2>
     <p>{{item[1].description}}</p>
     {% if item[1].systems %}
         [{{item[1].systems | join: ", "}}]
