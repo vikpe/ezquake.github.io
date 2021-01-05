@@ -3,7 +3,7 @@
     "description": "When active the player will fire the weapon he is currently holding. This is the primary command used to make the player fire the gun. For as long as the key that is bound to this command is held down and this command is active the player will keep on firing the gun."
   },
   "+attack2": {
-    "description": "Secondary attack button ZZZZZZZZZZZz."
+    "description": "Secondary attack button."
   },
   "+back": {
     "description": "When active the player will move backwards."
