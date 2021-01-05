@@ -391,16 +391,6 @@ ul.nav-tabs {
     margin-bottom: 1em;
 }
 
-#qwnetwork {
-    width: auto;
-    margin: auto auto;
-}
-
-#qwnet_content {
-    width: 720px;
-    margin: auto auto;
-}
-
 /* download table */
 div.dl-table > div.dl-row.header {
     font-weight: bold;
