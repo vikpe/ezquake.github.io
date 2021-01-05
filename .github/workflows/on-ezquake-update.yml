@@ -1,4 +1,4 @@
-name: ezQuake updates
+name: on ezQuake update
 
 on:
   repository_dispatch:
@@ -25,5 +25,3 @@ jobs:
         with:
           commit_message: Update ezQuake help files.
           file_pattern: _data/ezquake/*.json
-          commit_user_name: GitHub Actions
-          commit_user_email: actions@github.com
