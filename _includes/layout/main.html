@@ -1,10 +1,27 @@
 <main>
+    {% if page.tab %}
     {% include layout/tabs.html %}
+    {% endif %}
+
     <div class="container">
         <section class="section">
+            {% if page.sidebar or page.url contains "/docs/" %}
+            <div class="tile is-ancestor">
+                <div class="tile is-3">
+                    {% include sidebars/manual.html %}
+                </div>
+
+                <div class="tile">
+                    <div class="content">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+            {% else %}
             <div class="content">
                 {{ content }}
             </div>
+            {% endif %}
         </section>
     </div>
 </main>
