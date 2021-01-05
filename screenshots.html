@@ -3,31 +3,16 @@ layout: default
 tab: Screenshots
 ---
 
-<link rel="stylesheet" href="{{site.url}}/css/simpleLightbox.min.css">
-
 <div class="app-gallery">
-        <a href="{{site.url}}/img/screenshots/armor_battle.jpg" title="Battle for armor"><img src="{{site.url}}/img/screenshots/armor_battle.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/observing_features.jpg" title="Spectator features" longtitle="During QTV/demo playback, each player is along with health, armor and weapons."><img src="{{site.url}}/img/screenshots/observing_features.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/bloom.jpg" title="Bloom effect"><img src="{{site.url}}/img/screenshots/bloom.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/powerupshells.jpg" title="Powerup shells effect"><img src="{{site.url}}/img/screenshots/powerupshells.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/rich_menus.jpg" title="Rich mouse-driven menus"><img src="{{site.url}}/img/screenshots/rich_menus.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/underwater.jpg" title="Underwater effects"><img src="{{site.url}}/img/screenshots/underwater.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/shambler_cutf_bluefog.jpg" title="Special effects"><img src="{{site.url}}/img/screenshots/shambler_cutf_bluefog.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/drawflat_fastturb_multiview.jpg" title="Solid textures, multiview"><img src="{{site.url}}/img/screenshots/drawflat_fastturb_multiview.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/lightning_sparks.jpg" title="Lightning sparks"><img src="{{site.url}}/img/screenshots/lightning_sparks.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/fog_fogsky_grenadetrail_flame.jpg" title="Grenade trail, fog"><img src="{{site.url}}/img/screenshots/fog_fogsky_grenadetrail_flame.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/nailtrail_muzzleflash.jpg" title="Nail trail, muzzle flash"><img src="{{site.url}}/img/screenshots/nailtrail_muzzleflash.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/nailtrail_plasma.jpg" title="Plasma nail-trail"><img src="{{site.url}}/img/screenshots/nailtrail_plasma.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/part_zap.jpg" title="Zap particles"><img src="{{site.url}}/img/screenshots/part_zap.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/partteleport_partshotgun_partblood.jpg" title="Teleport effects"><img src="{{site.url}}/img/screenshots/partteleport_partshotgun_partblood.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/explosion_rain_shockwave.jpg" title="Explosion shockwave"><img src="{{site.url}}/img/screenshots/explosion_rain_shockwave.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/surface_lava.jpg" title="Boiling lava"><img src="{{site.url}}/img/screenshots/surface_lava.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/surface_slime.jpg" title="Slime fumes"><img src="{{site.url}}/img/screenshots/surface_slime.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/torches_fog_nailsparks.jpg" title="Torches, nail sparks"><img src="{{site.url}}/img/screenshots/torches_fog_nailsparks.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/damagestats_bloodpart_motiontrails.jpg" title="Damage stats"><img src="{{site.url}}/img/screenshots/damagestats_bloodpart_motiontrails.thumb.jpg" /></a>
-        <a href="{{site.url}}/img/screenshots/teamplay_hud_features.jpg" title="Teamplay HUD"><img src="{{site.url}}/img/screenshots/teamplay_hud_features.thumb.jpg" /></a>
+    {% for image in site.data.media.screenshots %}
+        <a href="{{site.url}}/img/screenshots/{{image.filename}}" title="Battle for armor">
+                <img src="{{site.url}}/img/screenshots/{{image.filename | replace: '.jpg', '.thumb.jpg'}}" />
+                <!-- {{image.title}} -->
+        </a>
+    {% endfor %}
 </div>
 
+<link rel="stylesheet" href="{{site.url}}/css/simpleLightbox.min.css">
 <script src="{{site.url}}/js/simpleLightbox.min.js"></script>
 <script type="text/javascript">
     new SimpleLightbox({elements: '.app-gallery a'});
