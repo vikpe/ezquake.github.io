@@ -16,7 +16,7 @@ main:
   - title: Reference
     url: /reference/
   - title: Variables
-    url: /docs/vars/hud/
+    url: /docs/vars/miscellaneous/
 
 sidebars:
   manual:
