@@ -5,7 +5,7 @@ tab: Screenshots
 
 <div class="app-gallery">
     {% for image in site.data.media.screenshots %}
-        <a href="{{site.url}}/assets/img/screenshots/{{image.filename}}" title="Battle for armor">
+        <a href="{{site.url}}/assets/img/screenshots/{{image.filename}}" title="{{image.title}}">
                 <img src="{{site.url}}/assets/img/screenshots/{{image.filename | replace: '.jpg', '.thumb.jpg'}}" />
                 <!-- {{image.title}} -->
         </a>
