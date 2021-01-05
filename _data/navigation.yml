@@ -36,11 +36,11 @@ sidebars:
     - title: Features
       items:
         - title: Voice communication
-          url: docs/guides/voice-supp
-        - title: Multiview demo playbackort/
+          url: docs/guides/voice-support/
+        - title: Multiview demo playback
           url: docs/guides/multiview/
         - title: Capturing video
-          url: docs/guides/demo-capt
+          url: docs/guides/demo-capture/
         - title: Graphics options
           url: docs/guides/graphics/
         - title: Message filtering
@@ -96,8 +96,8 @@ sidebars:
         - title: Controls
           url: docs/input/
         - title: Multiplayer
-          url: docs/multip
-        - title: Audiolayer/
+          url: docs/multiplayer/
+        - title: Audio
           url: docs/sound/
         - title: Teamplay settings
           url: docs/teamplay/
