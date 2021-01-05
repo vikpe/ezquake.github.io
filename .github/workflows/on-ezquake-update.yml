@@ -21,7 +21,7 @@ jobs:
         run: wget -i _data/ezquake/files_to_download.txt -P _data/ezquake
 
       - uses: stefanzweifel/git-auto-commit-action@v4
-        name: Update help files.
+        name: Commit updated help files (if changed)
         with:
           commit_message: Update ezQuake help files.
           file_pattern: _data/ezquake/*.json
