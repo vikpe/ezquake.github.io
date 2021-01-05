@@ -7,13 +7,16 @@
         <section class="section">
             {% if page.sidebar or page.url contains "/docs/" %}
             <div class="tile is-ancestor">
-                <div class="tile is-3">
-                    {% include sidebars/manual.html %}
+                <div class="tile is-parent is-3">
+                    <div class="tile is-child">
+                        {% include sidebars/manual.html %}
+                    </div>
                 </div>
-
-                <div class="tile">
-                    <div class="content">
-                        {{ content }}
+                <div class="tile is-parent">
+                    <div class="tile is-child">
+                        <div class="content">
+                            {{ content }}
+                        </div>
                     </div>
                 </div>
             </div>
