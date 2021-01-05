@@ -5,9 +5,6 @@
   "+attack2": {
     "description": "Secondary attack button."
   },
-  "+attack3": {
-    "description": "THIRD attack button."
-  },
   "+back": {
     "description": "When active the player will move backwards."
   },
