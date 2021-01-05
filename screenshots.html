@@ -2,107 +2,33 @@
 layout: default
 tab: Screenshots
 ---
-<div id="pic-content"></div>
-<!-- Dialog -->
-<div class="modal fade" tabindex="-1" role="dialog" id="picModal">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Modal title</h4>
-            </div>
-            <div class="modal-body"></div>
-            <div class="pic-description"></div>
-        </div>
-    </div>
+
+<link rel="stylesheet" href="{{site.url}}/css/simpleLightbox.min.css">
+
+<div class="app-gallery">
+        <a href="{{site.url}}/img/screenshots/armor_battle.jpg" title="Battle for armor"><img src="{{site.url}}/img/screenshots/armor_battle.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/observing_features.jpg" title="Spectator features" longtitle="During QTV/demo playback, each player is along with health, armor and weapons."><img src="{{site.url}}/img/screenshots/observing_features.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/bloom.jpg" title="Bloom effect"><img src="{{site.url}}/img/screenshots/bloom.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/powerupshells.jpg" title="Powerup shells effect"><img src="{{site.url}}/img/screenshots/powerupshells.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/rich_menus.jpg" title="Rich mouse-driven menus"><img src="{{site.url}}/img/screenshots/rich_menus.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/underwater.jpg" title="Underwater effects"><img src="{{site.url}}/img/screenshots/underwater.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/shambler_cutf_bluefog.jpg" title="Special effects"><img src="{{site.url}}/img/screenshots/shambler_cutf_bluefog.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/drawflat_fastturb_multiview.jpg" title="Solid textures, multiview"><img src="{{site.url}}/img/screenshots/drawflat_fastturb_multiview.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/lightning_sparks.jpg" title="Lightning sparks"><img src="{{site.url}}/img/screenshots/lightning_sparks.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/fog_fogsky_grenadetrail_flame.jpg" title="Grenade trail, fog"><img src="{{site.url}}/img/screenshots/fog_fogsky_grenadetrail_flame.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/nailtrail_muzzleflash.jpg" title="Nail trail, muzzle flash"><img src="{{site.url}}/img/screenshots/nailtrail_muzzleflash.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/nailtrail_plasma.jpg" title="Plasma nail-trail"><img src="{{site.url}}/img/screenshots/nailtrail_plasma.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/part_zap.jpg" title="Zap particles"><img src="{{site.url}}/img/screenshots/part_zap.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/partteleport_partshotgun_partblood.jpg" title="Teleport effects"><img src="{{site.url}}/img/screenshots/partteleport_partshotgun_partblood.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/explosion_rain_shockwave.jpg" title="Explosion shockwave"><img src="{{site.url}}/img/screenshots/explosion_rain_shockwave.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/surface_lava.jpg" title="Boiling lava"><img src="{{site.url}}/img/screenshots/surface_lava.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/surface_slime.jpg" title="Slime fumes"><img src="{{site.url}}/img/screenshots/surface_slime.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/torches_fog_nailsparks.jpg" title="Torches, nail sparks"><img src="{{site.url}}/img/screenshots/torches_fog_nailsparks.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/damagestats_bloodpart_motiontrails.jpg" title="Damage stats"><img src="{{site.url}}/img/screenshots/damagestats_bloodpart_motiontrails.thumb.jpg" /></a>
+        <a href="{{site.url}}/img/screenshots/teamplay_hud_features.jpg" title="Teamplay HUD"><img src="{{site.url}}/img/screenshots/teamplay_hud_features.thumb.jpg" /></a>
 </div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+<script src="{{site.url}}/js/simpleLightbox.min.js"></script>
 <script type="text/javascript">
-    let pics = [
-        { image: 'armor_battle.jpg', caption: 'Battle for armor' },
-        {
-            image: 'observing_features.jpg',
-            caption: 'Spectator features',
-            description: 'During QTV/demo playback, each player is identified along with health, armor and weapons.',
-        },
-        { image: 'bloom.jpg', caption: 'Bloom effect' },
-        { image: 'powerupshells.jpg', caption: 'Powerup shells effect' },
-        { image: 'rich_menus.jpg', caption: 'Rich mouse-driven menus' },
-        { image: 'underwater.jpg', caption: 'Underwater effects' },
-        { image: 'shambler_cutf_bluefog.jpg', caption: 'Special effects' },
-        { image: 'drawflat_fastturb_multiview.jpg', caption: 'Solid textures, multiview' },
-        { image: 'lightning_sparks.jpg', caption: 'Lightning sparks' },
-        { image: 'fog_fogsky_grenadetrail_flame.jpg', caption: 'Grenade trail, fog' },
-        { image: 'nailtrail_muzzleflash.jpg', caption: 'Nail trail, muzzle flash' },
-        { image: 'nailtrail_plasma.jpg', caption: 'Plasma nail-trail' },
-        { image: 'part_zap.jpg', caption: 'Zap particles' },
-        { image: 'partteleport_partshotgun_partblood.jpg', caption: 'Teleport effects' },
-        { image: 'explosion_rain_shockwave.jpg', caption: 'Explosion shockwave' },
-        { image: 'surface_lava.jpg', caption: 'Boiling lava' },
-        { image: 'surface_slime.jpg', caption: 'Slime fumes' },
-        { image: 'torches_fog_nailsparks.jpg', caption: 'Torches, nail sparks' },
-        { image: 'damagestats_bloodpart_motiontrails.jpg', caption: 'Damage stats' },
-        { image: 'teamplay_hud_features.jpg', caption: 'Teamplay HUD' },
-    ];
-
-    $(document).ready(function() {
-        let row = null;
-        let index = 0;
-
-        $(pics).each(function(index) {
-            pic = pics[index];
-            if (index % 3 == 0) {
-                $('#pic-content').append(row = $('<div>').attr('class', 'row'));
-            }
-
-            row.append(
-                $('<div>').attr('class', 'col-sm-6 col-md-4').append(
-                    $('<div>').attr('class', 'thumbnail').append(
-                        $('<a>').
-                            attr('href', '#').
-                            attr('data-toggle', 'modal').
-                            attr('data-target', '#picModal').
-                            attr('data-index', index).
-                            append(
-                                $('<img>').
-                                    attr('src',
-                                        '{{site.url}}/img/screenshots/' + pic.image.replace('.jpg', '.thumb.jpg')).
-                                    attr('alt', pic.caption),
-                            ),
-                    ).append(
-                        $('<div>').attr('class', 'caption').append(
-                            $('<p>').text(pic.caption),
-                        ),
-                    ),
-                ),
-            );
-        });
-
-        $('#picModal').on('show.bs.modal', function(event) {
-            let index = $(event.relatedTarget).data('index') * 1;
-            let pic = pics[index]; // Button that triggered the modal
-            let modal = $(this);
-            modal.find('.modal-title').text(pic.caption);
-            modal.find('.modal-body').empty().append(
-                $('<img>').attr('src', '{{site.url}}/img/screenshots/' + pic.image).attr('alt', pic.caption),
-            );
-            modal.find('.pic-description').text(pic.description || '');
-
-            $(this).find('.modal-body').css({
-                width: 'auto', //probably not needed
-                height: 'auto', //probably not needed
-                'max-height': '100%',
-            });
-        });
-    });
+    new SimpleLightbox({elements: '.app-gallery a'});
 </script>
-
