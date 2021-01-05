@@ -1,7 +1,7 @@
 # Site settings
 title: ezQuake
 description: "ezQuake - the #1 QuakeWorld client"
-url: https://www.ezquake.com/
+url: https://vikpe.org/ezquake.github.io/
 
 # Build settings
 markdown: kramdown
