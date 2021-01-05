@@ -5567,7 +5567,9 @@
       "remarks": "Applies to classic OpenGL renderer only",
       "group-id": "35",
       "type": "integer",
-      "renderers": [ "classic" ]
+      "renderers": [
+        "classic"
+      ]
     },
     "gl_program_turbsurfaces": {
       "default": "1",
@@ -5575,7 +5577,9 @@
       "remarks": "Applies to classic OpenGL renderer only",
       "group-id": "35",
       "type": "integer",
-      "renderers": [ "classic" ]
+      "renderers": [
+        "classic"
+      ]
     },
     "gl_rl_globe": {
       "default": "0",
@@ -7341,7 +7345,6 @@
           "description": "Show horizontal power meter.",
           "name": "PMETER"
         }
-
       ]
     },
     "hud_frags_fliptext": {
