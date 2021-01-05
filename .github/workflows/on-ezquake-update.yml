@@ -21,6 +21,7 @@ jobs:
         run: wget -i _data/ezquake/files_to_download.txt -P _data/ezquake
         
       - run: ls -l
+      - run: git status
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
