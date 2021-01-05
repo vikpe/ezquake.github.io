@@ -1,9 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 {% include layout/head.html %}
-{% include layout/header.html %}
-<div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-        {% include layout/tabs.html %}
-        {{ content }}
-    </section>
-</div>
-{% include layout/footer.html %}
+<body>
+    {% include layout/header.html %}
+    {% include layout/main.html %}
+    {% include layout/footer.html %}
+</body>
+</html>
