@@ -9,7 +9,11 @@
             <div class="tile is-ancestor">
                 <div class="tile is-parent is-3">
                     <div class="tile is-child">
-                        {% include sidebars/manual.html %}
+                         {% if page.url contains "/docs/vars/" %}
+                            {% include sidebars/vars.html %}
+                        {% else %}
+                            {% include sidebars/manual.html %}
+                        {% endif %}
                     </div>
                 </div>
                 <div class="tile is-parent">

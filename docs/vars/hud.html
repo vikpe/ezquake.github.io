@@ -1,0 +1,37 @@
+---
+layout: default
+title: HUD
+slug: hud
+tab: Variables
+sidebar: variables
+---
+
+<h1>{{page.title}}</h1>
+
+{% assign groups = site.data.ezquake.help_variables_tree[page.slug]["items"] %}
+{% for group in groups %}
+    <h2 id="{{group.slug}}">{{group.title}}</h2>
+
+    {% for item in group.items %}
+        <div>
+            <h3 class="title is-5"><code>{{ item.name }}</code></h3>
+            <p>{{ item.type }}</p>
+            <p>{{ item.desc }}</p>
+
+            {% if item.values %}
+            <ul>
+                {% for val in item.values %}
+                    <li><strong>{{val.name}}</strong>: {{val.description}}</li>
+                {% endfor %}
+            </ul>
+
+            {% endif %}
+
+            {% if item.remarks %}
+            <blockqoute>{{item.remarks}}</blockqoute>
+            {% endif %}
+        </div>
+        <hr>
+    {% endfor %}
+{% endfor %}
+

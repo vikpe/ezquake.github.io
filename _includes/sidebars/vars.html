@@ -1,0 +1,18 @@
+<aside class="menu">
+    {% for group in site.data.ezquake.help_variables_tree %}
+    <p class="menu-label">
+        {{group[1].title}}
+    </p>
+    <ul class="menu-list">
+        {% for item in group[1].items %}
+        <li>
+            {% if item.url %}
+            <a href="{{item.url | relative_url}}" {% if page.url == item.url %} class="is-active"{% endif %}>{{item.title}}</a>
+            {% else %}
+            {{item.title}}
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</aside>
