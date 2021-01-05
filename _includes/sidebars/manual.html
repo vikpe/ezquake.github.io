@@ -7,7 +7,7 @@
         {% for item in group.items %}
         <li>
             {% if item.url %}
-            <a href="{{item.url | relative_url}}">{{item.title}}</a>
+            <a href="{{item.url | relative_url}}" {% if page.url == item.url %} class="is-active"{% endif %}>{{item.title}}</a>
             {% else %}
             {{item.title}}
             {% endif %}
@@ -15,7 +15,7 @@
             {% if item.items %}
             <ul>
                 {% for subitem in item.items %}
-                    <li><a href="{{subitem.url | relative_url}}">{{subitem.title}}</a></li>
+                    <li><a href="{{subitem.url | relative_url}}" {% if page.url == subitem.url %} class="is-active"{% endif %}>{{subitem.title}}</a></li>
                 {% endfor %}
             </ul>
             {% endif %}

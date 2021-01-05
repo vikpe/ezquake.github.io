@@ -2,7 +2,7 @@
     <div class="tabs" role="menu">
         <ul>
             {% for item in site.data.navigation.main %}
-            <li {% if page.tab== item.title %} class="is-active" {% endif %}>
+            <li {% if page.tab == item.title %} class="is-active" {% endif %}>
                 <a href="{{item.url | relative_url}}">{{item.title}}</a>
             </li>
             {% endfor %}
