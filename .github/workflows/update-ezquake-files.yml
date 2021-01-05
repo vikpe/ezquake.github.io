@@ -3,9 +3,14 @@ on:
   repository_dispatch:
     types: [ ezquake-updated ]
 jobs:
-  myEvent:
+  download:
+    name: Dowload ezQuake files
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo ${{ github.event.client_payload.ref }} ${{ github.event.client_payload.sha }}
-      - run: wget https://github.com/ezQuake/ezquake-source/blob/master/help_cmdline_params.json
+      - name: Delete existing files
+        run: rm _data/ezquake/*.json
+      - name: Download files from repo
+        run: wget -i _data/ezquake/files_to_download.txt -P _data/ezquake
+      - name: Check status
+        run: git status
