@@ -1,4 +1,4 @@
-name: ezQuake updates
+name: ezQuake updated
 
 on:
   repository_dispatch:
@@ -19,6 +19,8 @@ jobs:
 
       - name: Download help files from ezquake-source
         run: wget -i _data/ezquake/files_to_download.txt -P _data/ezquake
+        
+      - run: ls -l
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
