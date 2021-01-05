@@ -1,4 +1,4 @@
-name: ezQuake updated
+name: ezQuake updates
 
 on:
   repository_dispatch:
@@ -19,11 +19,12 @@ jobs:
 
       - name: Download help files from ezquake-source
         run: wget -i _data/ezquake/files_to_download.txt -P _data/ezquake
-        
-      - run: ls -l
-      - run: git status
+
+      - name: Stage help files
+        run: git add _data/ezquake/*.json
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        name: Commit help files
         with:
           commit_message: Commit updated help files.
           file_pattern: _data/ezquake/*.json
