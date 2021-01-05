@@ -1,0 +1,11 @@
+name: Update ezQuake files
+on:
+  repository_dispatch:
+    types: [ ezquake-updated ]
+jobs:
+  myEvent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo ${{ github.event.client_payload.ref }} ${{ github.event.client_payload.sha }}
+      - run: wget https://github.com/ezQuake/ezquake-source/blob/master/help_cmdline_params.json
