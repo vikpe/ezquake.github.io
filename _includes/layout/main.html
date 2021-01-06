@@ -15,6 +15,20 @@
     {% endif %}
 
     <div class="container">
+
+        {% if page.tab == "Documentation" or layout.tab == "Documentation" %}
+        <nav class="breadcrumb mt-4 mx-5" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="{{ '/docs/' | relative_url }}">Documentation</a></li>
+                {% if page.url contains "/docs/guides/" %}
+                <li><a href="{{ '/docs/guides/' | relative_url }}">Guides</a></li>
+                {% endif %}
+                <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
+            </ul>
+        </nav>
+        <hr class="mb-0">
+        {% endif %}
+
         <section class="section">
             {% if page.url contains "/docs/vars/" or page.url contains "/docs/manual/" or page.url contains
             "/docs/guides/" %}
