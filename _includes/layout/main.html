@@ -1,7 +1,9 @@
 {% capture content_div %}
 <div class="content">
     {% if page.title %}
+    {% unless page.path contains ".md" %}
     <h1>{{page.title}}</h1>
+    {% endunless %}
     {% endif %}
     {{ content }}
 </div>
@@ -14,7 +16,8 @@
 
     <div class="container">
         <section class="section">
-            {% if page.url contains "/docs/vars/" or page.url contains "/docs/manual/" %}
+            {% if page.url contains "/docs/vars/" or page.url contains "/docs/manual/" or page.url contains
+            "/docs/guides/" %}
             <div class="tile is-ancestor">
                 <div class="tile is-parent is-3">
                     <div class="tile is-child">
