@@ -1,5 +1,39 @@
 <footer class="footer">
-  <div class="content has-text-centered">
-    the footer
-  </div>
+    <div class="container">
+        <div class="content">
+            <div class="columns">
+                <div class="column">
+                    {% for item in site.data.navigation.main %}
+                    {% unless item.title == "Documentation" or item.title == "Manual" %}
+                    <p>
+                        <strong><a href="{{item.url | relative_url}}">{{item.title}}</a></strong>
+                    </p>
+                    {% endunless %}
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    <strong>Manual</strong><br>
+                    <ul>
+                        {% for item in site.data.navigation.sidebars.manual %}
+                        <li>
+                            <a href="{{item.url | relative_url}}">{{item.title}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="column">
+                    <strong>Documentation</strong><br>
+                    <ul>
+                        <li><a href="#">Variables</a></li>
+                        <li><a href="#">Command line parameters</a></li>
+                        <li><a href="#">Macros</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            ezQuake
+        </div>
+    </div>
 </footer>

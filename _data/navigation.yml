@@ -9,8 +9,8 @@ main:
     url: /downloads/
   - title: Manual
     url: /manual/
-  - title: Variables
-    url: /docs/vars/miscellaneous/
+  - title: Documentation
+    url: /docs/
   - title: About
     url: /about/
 
@@ -82,24 +82,3 @@ sidebars:
           items:
             - title: Upgrading from 2.2
               url: /docs/guides/upgrade-from-2.2/
-
-    - title: Reference (console variables)
-      items:
-        - title: Demo playback
-          url: /docs/demos/
-        - title: Graphics
-          url: /docs/graphics/
-        - title: Heads-up display
-          url: /docs/hud/
-        - title: Controls
-          url: /docs/input/
-        - title: Multiplayer
-          url: /docs/multiplayer/
-        - title: Audio
-          url: /docs/sound/
-        - title: Teamplay settings
-          url: /docs/teamplay/
-        - title: Miscellaneous
-          url: /docs/miscellaneous/
-        - title: Server settings
-          url: /docs/server/
