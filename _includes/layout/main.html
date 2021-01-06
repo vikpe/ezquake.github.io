@@ -34,20 +34,16 @@
         <section class="section">
             {% if page.url contains "/docs/vars/" or page.url contains "/docs/manual/" or page.url contains
             "/docs/guides/" %}
-            <div class="tile is-ancestor">
-                <div class="tile is-parent is-3">
-                    <div class="tile is-child">
-                        {% if page.url contains "/docs/vars/" %}
-                        {% include sidebars/vars.html %}
-                        {% else %}
-                        {% include sidebars/manual.html %}
-                        {% endif %}
-                    </div>
+            <div class="columns">
+                <div class="column is-narrow">
+                    {% if page.url contains "/docs/vars/" %}
+                    {% include sidebars/vars.html %}
+                    {% else %}
+                    {% include sidebars/manual.html %}
+                    {% endif %}
                 </div>
-                <div class="tile is-parent">
-                    <div class="tile is-child">
-                        {{ content_div }}
-                    </div>
+                <div class="column">
+                    {{ content_div }}
                 </div>
             </div>
             {% else %}
