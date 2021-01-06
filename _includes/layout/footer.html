@@ -29,14 +29,14 @@
                         <ul class="column">
                             {% for group in site.data.ezquake.help_variables_tree | limit:5 %}
                             <li>
-                                <a href="{{group[1].url}}">{{group[1].title}}</a>
+                                <a href="{{ group[1].url | relative_url }}">{{group[1].title}}</a>
                             </li>
                             {% endfor %}
                         </ul>
                         <ul class="column">
                             {% for group in site.data.ezquake.help_variables_tree | offset:5 %}
                             <li>
-                                <a href="{{group[1].url}}">{{group[1].title}}</a>
+                                <a href="{{ group[1].url | relative_url }}">{{group[1].title}}</a>
                             </li>
                             {% endfor %}
                         </ul>
