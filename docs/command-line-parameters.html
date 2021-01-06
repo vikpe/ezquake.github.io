@@ -1,0 +1,66 @@
+---
+layout: default
+title: Command Line Parameters
+tab: Documentation
+---
+
+<p>
+    <strong>Search</strong> <input class="input" type="text" id="filterInput" onkeyup="filterTable()">
+</p>
+
+<table class="table is-striped" id="filterTable">
+    <thead>
+        <tr>
+            <th style="min-width: 200px">Name</th>
+            <th>Arguments</th>
+            <th>Systems</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for macro in site.data.ezquake.help_cmdline_params %}
+        <tr>
+            <td>
+                <code>{{ macro[0] }}</code>
+            </td>
+            <td>
+                <div class="is-family-monospace is-size-7 has-text-grey" style="margin-top: 3px;">
+                    {{ macro[1].arguments | escape }}
+                </div>
+            </td>
+            <td>
+                {% if macro[1].systems %}
+                <span class="tag">{{ macro[1].systems | join: "</span>
+                <span class="tag">" }}</span>
+                {% endif %}
+            </td>
+            <td>
+                {{ macro[1].description | escape }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<script>
+    function filterTable() {
+        // Declare variables
+        let input, filter, table, tr, i;
+        input = document.getElementById('filterInput');
+        filter = input.value.toLowerCase();
+        table = document.getElementById('filterTable');
+        tr = table.getElementsByTagName('tr');
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 1; i < tr.length; i++) {
+            let stringToMatch = tr[i].innerText;
+
+            if (stringToMatch.toLowerCase().indexOf(filter) > -1) {
+                tr[i].style.display = '';
+            } else {
+                tr[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+
