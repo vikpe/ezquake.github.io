@@ -1,0 +1,40 @@
+<div class="container">
+    <nav class="navbar is-dark is-spaced" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ '/' | relative_url}}">
+                <img src="{{ '/assets/img/ezquake_logo.png' | relative_url }}" width="28" height="28"> &nbsp; ezQuake
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarMainTop">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMainTop" class="navbar-menu">
+            <div class="navbar-start">
+                {% for item in site.data.navigation.main %}
+                {% unless item.title == "Home" %}
+                <a href="{{item.url | relative_url}}"
+                   class="navbar-item {% if page.tab == item.title or layout.tab == item.title %} is-active{% endif %}">{{item.title}}</a>
+                {% endunless %}
+                {% endfor %}
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="{{ '/downloads/' | relative_url }}" class="button is-primary">
+                            <strong>Download ezQuake</strong>
+                        </a>
+                        <a class="button is-light">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
