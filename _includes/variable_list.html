@@ -9,13 +9,13 @@
             {% if item.type != "boolean" and item.values %}
             <ul>
                 {% for val in item.values %}
-                    <li><strong>{{val.name}}</strong>: {{val.description}}</li>
+                    <li><strong>{{val.name}}</strong>: {{ val.description | escape }}</li>
                 {% endfor %}
             </ul>
             {% endif %}
 
             {% if item.remarks %}
-            <blockqoute>{{item.remarks}}</blockqoute>
+            <blockqoute>{{item.remarks | escape}}</blockqoute>
             {% endif %}
         </div>
         <hr>
