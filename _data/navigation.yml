@@ -9,8 +9,6 @@ main:
     url: /downloads/
   - title: Manual
     url: /manual/
-  - title: Reference
-    url: /reference/
   - title: Variables
     url: /docs/vars/miscellaneous/
   - title: About
