@@ -1,23 +1,45 @@
 {% for group in include.groups %}
-    <h2 id="{{group.slug}}">{{group.title}}</h2>
+<h2 id="{{group.slug}}">{{group.title}}</h2>
 
-    {% for item in group.items %}
-        <div>
-            <h3 class="title is-5"><code>{{ item.name }}</code></h3>
-            <p>({{ item.type }}) {{ item.desc }}</p>
+<table class="table is-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in group.items %}
+        <tr>
+            <td><code>{{ item.name }}</code></td>
+            <td>
+                <div class="is-family-monospace is-size-7 has-text-grey" style="margin-top: 3px;">
+                    {{ item.type }}
+                </div>
+            </td>
+            <td>
+                {% if item.desc %}
+                <p>{{ item.desc | escape }}</p>
+                {% endif %}
 
-            {% if item.type != "boolean" and item.values %}
-            <ul>
-                {% for val in item.values %}
+                {% if item.values %}
+                <ul class="mt-0">
+                    {% for val in item.values %}
                     <li><strong>{{val.name}}</strong>: {{ val.description | escape }}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
+                    {% endfor %}
+                </ul>
+                {% endif %}
 
-            {% if item.remarks %}
-            <blockqoute>{{item.remarks | escape}}</blockqoute>
-            {% endif %}
-        </div>
-        <hr>
-    {% endfor %}
+                {% if item.remarks %}
+                <blockqoute>{{item.remarks | escape}}</blockqoute>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<hr>
+
 {% endfor %}
