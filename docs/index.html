@@ -3,8 +3,69 @@ layout: default
 title: Documentation
 ---
 
-TODO: documentation overview
+<p class="subtitle">Documentation overview</p>
 
 <hr>
 
+<div class="field">
+    <div class="control">
+        <p><strong>Search</strong></p>
+        <input class="input" type="text">
+    </div>
+</div>
 
+<hr>
+
+<ul>
+    <li><a href="#">Command line parameters</a></li>
+    <li><a href="#">Macros</a></li>
+</ul>
+
+<hr>
+
+<h2>Guides</h2>
+
+<div class="columns is-multiline">
+    {% for group in site.data.navigation.sidebars.manual %}
+    <div class="column is-one-quarter my-4">
+        <h3>{{group.title}}</h3>
+
+        <ul>
+            {% for item in group.items %}
+            <li>
+                {% if item.url %}
+                <a href="{{item.url | relative_url}}">{{item.title}}</a>
+                {% else %}
+                {{item.title}}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<h2>Variables</h2>
+
+<div class="columns is-multiline">
+    {% for group in site.data.ezquake.help_variables_tree %}
+    <div class="column is-one-quarter my-4">
+        <h3>
+            {{group[1].title}}
+        </h3>
+        <ul>
+            {% for item in group[1].items %}
+            <li>
+                {% if item.url %}
+                <a href="{{item.url | relative_url}}">{{item.title}}</a>
+                {% else %}
+                {{item.title}}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>

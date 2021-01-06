@@ -62,21 +62,21 @@ sidebars:
         - title: Server Browser
           url: /docs/guides/server-browser/
 
-    - title: Changelogs
-      items:
-        - title: Version 3.2
-          url: /docs/guides/changelog-3.2/
-          items:
-            - title: 3.2.2
-              url: /docs/guides/changelog-3.2.2/
-        - title: Version 3.1
-          url: /docs/guides/changelog-3.1/
-        - title: Version 3.0
-          url: /docs/guides/changelog-3.0/
-          items:
-            - title: 3.0.1
-              url: /docs/guides/changelog-3.0.1/
-        - title: Guides
-          items:
-            - title: Upgrading from 2.2
-              url: /docs/guides/upgrade-from-2.2/
+#    - title: Changelogs
+#      items:
+#        - title: Version 3.2
+#          url: /docs/guides/changelog-3.2/
+#          items:
+#            - title: 3.2.2
+#              url: /docs/guides/changelog-3.2.2/
+#        - title: Version 3.1
+#          url: /docs/guides/changelog-3.1/
+#        - title: Version 3.0
+#          url: /docs/guides/changelog-3.0/
+#          items:
+#            - title: 3.0.1
+#              url: /docs/guides/changelog-3.0.1/
+#        - title: Guides
+#          items:
+#            - title: Upgrading from 2.2
+#              url: /docs/guides/upgrade-from-2.2/
