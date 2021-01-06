@@ -18,7 +18,7 @@
                 {% for item in site.data.navigation.main %}
                 {% unless item.title == "Home" %}
                 <a href="{{item.url | relative_url}}"
-                   class="navbar-item {% if page.tab == item.title or layout.tab == item.title %} is-active{% endif %}">{{item.title}}</a>
+                   class="navbar-item {% if page.title == item.title or page.tab == item.title or layout.tab == item.title %} is-active{% endif %}">{{item.title}}</a>
                 {% endunless %}
                 {% endfor %}
             </div>
