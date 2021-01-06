@@ -1,2 +1,19 @@
 ---
 ---
+
+footer.footer {
+  border-top: 1px solid #ddd;
+}
+
+
+header {
+  background-color: #363636;
+}
+
+#app-splash {
+  background: url('../img/screenshots/armor_battle.jpg');
+  background-size: contain;
+  height: 400px;
+  margin-left: -400px;
+  margin-right: -400px;
+}
