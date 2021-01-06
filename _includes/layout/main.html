@@ -21,7 +21,9 @@
             <ul>
                 <li><a href="{{ '/docs/' | relative_url }}">Documentation</a></li>
                 {% if page.url contains "/docs/guides/" %}
-                <li><a href="{{ '/docs/guides/' | relative_url }}">Guides</a></li>
+                <li class="is-active"><a href="#">Guides</a></li>
+                {% elsif page.url contains "/docs/vars/" %}
+                <li class="is-active"><a href="#">Variables</a></li>
                 {% endif %}
                 <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
             </ul>
