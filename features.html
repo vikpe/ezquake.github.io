@@ -3,15 +3,23 @@ layout: default
 title: Features
 tab: Features
 ---
-<h3>Modern Graphics</h3>
-<p>Particle explosions, shaft beam, gunshots, nails, rocket and grenade trails, blood, and others, MD3 models, fog, water effects, killing spree messages, rain...</p>
-<h3>Modern competitive gaming features</h3>
-<p>Fullbright skins, forcing team/enemy colors, advanced weapon handling, teamplay messages, auto game recording, automated screenshots and console logging, ...</p>
-<h3>Graphics customization</h3>
-<p>Customize your HUD, colors of walls and liquids, turn superfluous graphics effects off, change world textures, crosshair, sky picture, console background, game font, ...</p>
-<h3>Independent Physics</h3>
-<p>Get the smoothest experience possible without being limited by server or network settings</p>
-<h3>Integrated Server Browser</h3>
-<p>Easy searching and filtering of online servers</p>
-<h3>Enhanced demo/QTV playback</h3>
-<p>View recorded games from multiple points of view, watch action on radar, all player stats in a handy table, autotrack the strongest player</p>
+
+<p class="subtitle">ezQuake combines the best features of modern QuakeWorld® clients</p>
+
+{% for feature in site.data.ezq.features %}
+
+<hr>
+
+<div class="media">
+    <div class="media-left">
+        <figure>
+            <img src="{{ '/assets/img/screenshots/armor_battle.jpg' | relative_url }}" width="160">
+        </figure>
+    </div>
+    <div class="media-content">
+        <h2 id="{{ feature.title | slugify }}">{{ feature.title }}</h2>
+        <p>{{ feature.description }}</p>
+    </div>
+</div>
+
+{% endfor %}

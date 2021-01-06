@@ -1,0 +1,18 @@
+features:
+  - title: Modern Graphics
+    description: Particle explosions, shaft beam, gunshots, nails, rocket and grenade trails, blood, and others, MD3 models, fog, water effects, killing spree messages, rain...
+
+  - title: Modern competitive gaming features
+    description: Fullbright skins, forcing team/enemy colors, advanced weapon handling, teamplay messages, auto game recording, automated screenshots and console logging, ...
+
+  - title: Graphics customization
+    description: Customize your HUD, colors of walls and liquids, turn superfluous graphics effects off, change world textures, crosshair, sky picture, console background, game font, ...
+
+  - title: Independent Physics
+    description: Get the smoothest experience possible without being limited by server or network settings
+
+  - title: Integrated Server Browser
+    description: Easy searching and filtering of online servers
+
+  - title: Enhanced demo/QTV playback
+    description: View recorded games from multiple points of view, watch action on radar, all player stats in a handy table, autotrack the strongest player
