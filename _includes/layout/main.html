@@ -8,6 +8,10 @@
 {% endcapture %}
 
 <main>
+    {% if page.url == "/" %}
+    {% include layout/splash.html %}
+    {% endif %}
+
     <div class="container">
         <section class="section">
             {% if page.url contains "/docs/vars/" or page.url contains "/docs/manual/" %}

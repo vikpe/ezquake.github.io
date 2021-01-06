@@ -1,42 +1,73 @@
 screenshots:
   - filename: armor_battle.jpg
     title: Battle for armor
+
   - filename: observing_features.jpg
     title: Spectator features long
     description: During QTV/demo playback, each player is along with health, armor and weapons.
+
   - filename: bloom.jpg
     title: Bloom effect
+    tag: graphics
+
   - filename: powerupshells.jpg
     title: Powerup shells effect
+
   - filename: rich_menus.jpg
     title: Rich mouse-driven menus
+
   - filename: underwater.jpg
     title: Underwater effects
+
   - filename: shambler_cutf_bluefog.jpg
     title: Special effects
+
   - filename: drawflat_fastturb_multiview.jpg
     title: Solid textures, multiview
+    tag: graphics
+
   - filename: lightning_sparks.jpg
     title: Lightning sparks
+    tag: graphics
+
   - filename: fog_fogsky_grenadetrail_flame.jpg
     title: Grenade trail, fog
+    tag: graphics
+
   - filename: nailtrail_muzzleflash.jpg
     title: Nail trail, muzzle flash
+    tag: graphics
+
   - filename: nailtrail_plasma.jpg
     title: Plasma nail-trail
+    tag: graphics
+
   - filename: part_zap.jpg
     title: Zap particles
+    tag: graphics
+
   - filename: partteleport_partshotgun_partblood.jpg
     title: Teleport effects
+    tag: graphics
+
   - filename: explosion_rain_shockwave.jpg
     title: Explosion shockwave
+    tag: graphics
+
   - filename: surface_lava.jpg
     title: Boiling lava
+    tag: graphics
+
   - filename: surface_slime.jpg
     title: Slime fumes
+    tag: graphics
+
   - filename: torches_fog_nailsparks.jpg
     title: Torches, nail sparks
+
   - filename: damagestats_bloodpart_motiontrails.jpg
     title: Damage stats
+
   - filename: teamplay_hud_features.jpg
     title: Teamplay HUD
+    tag: customization
