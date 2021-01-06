@@ -1,0 +1,43 @@
+---
+layout: default
+title: Macros
+tab: Documentation
+---
+
+<table class="table is-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for macro in site.data.ezquake.help_macros %}
+        <tr>
+            <td>
+                <code>{{ macro[0] }}</code>
+            </td>
+            <td>
+                <div class="is-family-monospace is-size-7 has-text-grey" style="margin-top: 3px;">
+                    {{ macro[1].type }}
+                </div>
+            </td>
+            <td>
+                {{ macro[1].description }}
+
+                {% if macro[1].related-cvars %}
+                <div class="py-3 is-size-7">
+                    Related cvars
+                    <ul class="mt-0">
+                        <li>{{ macro[1].related-cvars | join: "</li>
+                        <li>" }}</li>
+                    </ul>
+                </div>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
