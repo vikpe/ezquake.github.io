@@ -4,7 +4,11 @@ title: Macros
 tab: Documentation
 ---
 
-<table class="table is-striped">
+<p>
+    <strong>Search</strong> <input class="input" type="text" id="filterInput" onkeyup="filterTable()">
+</p>
+
+<table class="table is-striped" id="filterTable">
     <thead>
         <tr>
             <th>Name</th>
@@ -40,4 +44,26 @@ tab: Documentation
         {% endfor %}
     </tbody>
 </table>
+
+<script>
+    function filterTable() {
+        // Declare variables
+        let input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById('filterInput');
+        filter = input.value.toLowerCase();
+        table = document.getElementById('filterTable');
+        tr = table.getElementsByTagName('tr');
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 1; i < tr.length; i++) {
+            let stringToMatch = tr[i].innerText;
+
+            if (stringToMatch.toLowerCase().indexOf(filter) > -1) {
+                tr[i].style.display = '';
+            } else {
+                tr[i].style.display = 'none';
+            }
+        }
+    }
+</script>
 
