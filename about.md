@@ -1,9 +1,8 @@
 ---
 layout: default
+title: About ezQuake
 tab: About
 ---
-
-# About ezQuake
 
 ## History
 <a href="http://idsoftware.com">id Software</a> created Quake in 1996, and released the source code to the engine (under the GPL licence) in 1999.  Tonik developed the ZQuake QuakeWorld client from this, before fuh took ZQuake and turned it into FuhQuake.

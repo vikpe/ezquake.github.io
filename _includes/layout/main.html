@@ -1,33 +1,34 @@
-<main>
-    {% if page.tab or layout.tab %}
-    {% include layout/tabs.html %}
+{% capture content_div %}
+<div class="content">
+    {% if page.title %}
+    <h1>{{page.title}}</h1>
     {% endif %}
+    {{ content }}
+</div>
+{% endcapture %}
 
+<main>
     <div class="container">
         <section class="section">
-            {% if page.url contains "/docs/" %}
+            {% if page.url contains "/docs/vars/" or page.url contains "/docs/manual/" %}
             <div class="tile is-ancestor">
                 <div class="tile is-parent is-3">
                     <div class="tile is-child">
-                         {% if page.url contains "/docs/vars/" %}
-                            {% include sidebars/vars.html %}
+                        {% if page.url contains "/docs/vars/" %}
+                        {% include sidebars/vars.html %}
                         {% else %}
-                            {% include sidebars/manual.html %}
+                        {% include sidebars/manual.html %}
                         {% endif %}
                     </div>
                 </div>
                 <div class="tile is-parent">
                     <div class="tile is-child">
-                        <div class="content">
-                            {{ content }}
-                        </div>
+                        {{ content_div }}
                     </div>
                 </div>
             </div>
             {% else %}
-            <div class="content">
-                {{ content }}
-            </div>
+            {{ content_div }}
             {% endif %}
         </section>
     </div>
