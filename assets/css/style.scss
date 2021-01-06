@@ -1,6 +1,5 @@
 ---
 ---
-
 footer.footer {
   border-top: 1px solid #ddd;
 }
@@ -10,8 +9,16 @@ header {
   background-color: #363636;
 }
 
-#app-splash {
+#app-splash-outer {
   background: #000 url('../img/screenshots/armor_battle.jpg');
   background-size: contain;
-  height: 400px;
+}
+
+#app-splash-inner {
+  background: linear-gradient(to right, #000 33%, rgba(0, 0, 0, 0));
+  text-shadow: black 1px 1px;
+
+  h1, h2 {
+    color: gold;
+  }
 }
