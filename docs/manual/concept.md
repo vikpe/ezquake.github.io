@@ -1,6 +1,6 @@
 ---
 layout: default
-tab: Manual
+tab: Documentation
 ---
 
 # ezQuake Manual - The concept of the game

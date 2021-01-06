@@ -1,6 +1,6 @@
 ---
 layout: default
-tab: Manual
+tab: Documentation
 ---
 
 ## Changes in 3.2

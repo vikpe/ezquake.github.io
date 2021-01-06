@@ -1,6 +1,6 @@
 ---
 layout: default
-tab: Manual
+tab: Documentation
 ---
 
 ## Fonts/charsets

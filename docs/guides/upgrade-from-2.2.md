@@ -1,6 +1,6 @@
 ---
 layout: default
-tab: Manual
+tab: Documentation
 ---
 
 ## Upgrading from 2.2 to 3.0
