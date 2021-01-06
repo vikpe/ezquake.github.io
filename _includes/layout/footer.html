@@ -7,9 +7,9 @@
                 <div class="column is-3">
                     <strong>Guides</strong><br>
                     <ul class="mb-0">
-                        {% for item in site.data.navigation.sidebars.manual %}
+                        {% for group in site.data.navigation.sidebars.manual %}
                         <li>
-                            <a href="{{item.url | relative_url}}">{{item.title}}</a>
+                            <a href="{{group.items[0].url | relative_url}}">{{group.title}}</a>
                         </li>
                         {% endfor %}
                     </ul>
