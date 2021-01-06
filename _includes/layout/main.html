@@ -1,11 +1,11 @@
 <main>
-    {% if page.tab %}
+    {% if page.tab or layout.tab %}
     {% include layout/tabs.html %}
     {% endif %}
 
     <div class="container">
         <section class="section">
-            {% if page.sidebar or page.url contains "/docs/" %}
+            {% if page.url contains "/docs/" %}
             <div class="tile is-ancestor">
                 <div class="tile is-parent is-3">
                     <div class="tile is-child">
