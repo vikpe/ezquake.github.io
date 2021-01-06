@@ -5,12 +5,11 @@ tab: Features
 ---
 
 <p class="subtitle">ezQuake combines the best features of modern QuakeWorld® clients</p>
+<br class="block">
 
 {% for feature in site.data.ezq.features %}
 
-<hr>
-
-<div class="media">
+<div class="media columns is-vcentered">
     <div class="media-left">
         <figure>
             <img src="{{ '/assets/img/screenshots/armor_battle.jpg' | relative_url }}" width="160">
@@ -18,7 +17,7 @@ tab: Features
     </div>
     <div class="media-content">
         <h2 id="{{ feature.title | slugify }}">{{ feature.title }}</h2>
-        <p>{{ feature.description }}</p>
+        <div>{{ feature.description }}</div>
     </div>
 </div>
 
