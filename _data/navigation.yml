@@ -1,8 +1,6 @@
 main:
   - title: Home
     url: /
-  - title: About
-    url: /about/
   - title: Features
     url: /features/
   - title: Screenshots
@@ -11,12 +9,12 @@ main:
     url: /downloads/
   - title: Manual
     url: /manual/
-  - title: Contribute
-    url: /contribute/
   - title: Reference
     url: /reference/
   - title: Variables
     url: /docs/vars/miscellaneous/
+  - title: About
+    url: /about/
 
 sidebars:
   manual:
