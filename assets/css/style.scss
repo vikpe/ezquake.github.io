@@ -1,14 +1,29 @@
 ---
 ---
-footer.footer {
-  border-top: 1px solid #ddd;
+  // Bulma overrides
+html {
+  background-color: #fafafa !important;
 }
 
+footer.footer {
+  border-top: 1px solid #ddd;
 
+  hr {
+    background-color: #e7e7e7;
+  }
+}
+
+// Layout
 header {
   background-color: #363636;
 }
 
+main {
+  background-color: #fff;
+}
+
+
+// Misc
 #app-splash-outer {
   background: #000 url(../img/screenshots/armor_battle.jpg);
   background-size: contain;
