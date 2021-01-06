@@ -23,6 +23,31 @@ main {
   background-color: #fff;
 }
 
+// Gallery
+.app-gallery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.app-gallery > a {
+  float: left;
+  margin: .8em;
+  display: block;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 6px 8px;
+  text-align: center;
+  font-size: .9em;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+
+  img {
+    display: block;
+    margin: 0 auto 0.5em;
+    height: 113px !important;
+  }
+}
+
 
 // Misc
 #app-splash-outer {
