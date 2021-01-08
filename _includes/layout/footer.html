@@ -2,51 +2,6 @@
     <div class="container">
         <div class="content">
 
-            <div class="columns">
-
-                <div class="column is-3">
-                    <strong>Guides</strong><br>
-                    <ul class="mb-0">
-                        {% for group in site.data.navigation.sidebars.manual %}
-                        <li>
-                            <a href="{{group.items[0].url | relative_url}}">{{group.title}}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-                <div class="column is-3">
-                    <strong>Misc</strong><br>
-                    <ul class="mb-0">
-                        <li><a href="{{ '/docs/command-line-parameters/' | relative_url }}">Command line parameters</a></li>
-                        <li><a href="{{ '/docs/macros/' | relative_url }}">Macros</a></li>
-                    </ul>
-                </div>
-
-                <div class="column is-6">
-                    <strong>Variables</strong><br>
-                    <div class="columns">
-                        <ul class="column mb-0">
-                            {% for group in site.data.ezquake.help_variables_tree | limit:5 %}
-                            <li>
-                                <a href="{{ group[1].url | relative_url }}">{{group[1].title}}</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                        <ul class="column mb-0">
-                            {% for group in site.data.ezquake.help_variables_tree | offset:5 %}
-                            <li>
-                                <a href="{{ group[1].url | relative_url }}">{{group[1].title}}</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-
-            <hr>
-
             <div class="columns is-vcentered is-justify-content-center">
                 {% for item in site.data.navigation.main | limit: 3 %}
                 <div class="column is-narrow is-centered">
