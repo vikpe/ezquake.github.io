@@ -16,18 +16,27 @@
 
     <div class="container">
 
-        {% if page.tab == "Documentation" or layout.tab == "Documentation" %}
-        <nav class="breadcrumb mt-4 mx-5" aria-label="breadcrumbs">
-            <ul>
-                <li><a href="{{ '/docs/' | relative_url }}">Documentation</a></li>
-                {% if page.url contains "/docs/guides/" %}
-                <li class="is-active"><a href="#">Guides</a></li>
-                {% elsif page.url contains "/docs/vars/" %}
-                <li class="is-active"><a href="#">Variables</a></li>
-                {% endif %}
-                <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
-            </ul>
-        </nav>
+        {% if page.url contains "/docs/" %}
+        <div class="mt-4 mx-5">
+            <div class="columns is-vcentered is-justify-content-space-between">
+                <div class="column is-narrow">
+                    <nav class="breadcrumb " aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="{{ '/docs/' | relative_url }}">Documentation</a></li>
+                            {% if page.url contains "/docs/guides/" %}
+                            <li class="is-active"><a href="#">Guides</a></li>
+                            {% elsif page.url contains "/docs/vars/" %}
+                            <li class="is-active"><a href="#">Variables</a></li>
+                            {% endif %}
+                            <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column is-narrow">
+                    <input type="text" class="input" id="docSearchInput" placeholder="Search docs">
+                </div>
+            </div>
+        </div>
         <hr class="mb-0">
         {% endif %}
 
