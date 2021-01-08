@@ -62,20 +62,35 @@ main {
 #app-splash-inner {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0));
 
-  a {
+  #app-features-link-wrapper,
+  #app-features-link {
     display: block;
     width: 480px;
-    margin: 0 auto;
-    box-shadow: black 0 0 10px;
-
-    &:hover {
-      box-shadow: yellow 0 0 16px;
-    }
   }
 
-  img {
-    display: block;
+  #app-features-link-wrapper {
+    background: url(../img/ezquake_features.jpg) no-repeat;
+  }
+
+  #app-features-link {
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 270px;
+    text-align: center;
     border: 1px solid black;
+    box-shadow: black 0 0 10px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: transparent;
+      //box-shadow: yellow 0 0 16px;
+    }
+
+    span {
+      background: black;
+      padding: .4em .6em;
+    }
   }
 
   .hero {
