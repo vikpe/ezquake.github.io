@@ -3,8 +3,6 @@ main:
     url: /
   - title: Features
     url: /features/
-  - title: Screenshots
-    url: /screenshots/
   - title: Downloads
     url: /downloads/
   - title: Documentation

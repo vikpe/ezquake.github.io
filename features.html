@@ -5,20 +5,37 @@ tab: Features
 ---
 
 <p class="subtitle">ezQuake combines the best features of modern QuakeWorld® clients</p>
-<br class="block">
 
 {% for feature in site.data.ezq.features %}
 
-<div class="media columns is-vcentered">
-    <div class="media-left">
-        <figure>
-            <img src="{{ '/assets/img/screenshots/armor_battle.jpg' | relative_url }}" width="160">
-        </figure>
-    </div>
-    <div class="media-content">
-        <h2 id="{{ feature.title | slugify }}">{{ feature.title }}</h2>
-        <div>{{ feature.description }}</div>
+<hr class="my-6">
+
+<div class="block">
+    <div class="media columns is-vcentered">
+        <div class="media-content">
+            <h2 id="{{ feature.title | slugify }}">{{ feature.title }}</h2>
+            <div>{{ feature.description }}</div>
+
+            {% assign feature_images = site.data.media.screenshots | where: "feature", feature.title | sort: "title" %}
+            {% if feature_images %}
+            <div class="app-gallery">
+                {% for image in feature_images %}
+                <a href="{{site.url}}/assets/img/screenshots/{{image.filename}}" title="{{image.title}}">
+                    <img src="{{site.url}}/assets/img/screenshots/{{image.filename | replace: '.jpg', '.thumb.jpg'}}" />
+                    {{image.title}}
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
     </div>
 </div>
 
 {% endfor %}
+
+
+<link rel="stylesheet" href="{{site.url}}/assets/css/simpleLightbox.min.css">
+<script src="{{site.url}}/assets/js/simpleLightbox.min.js"></script>
+<script type="text/javascript">
+    new SimpleLightbox({ elements: '.app-gallery a' });
+</script>

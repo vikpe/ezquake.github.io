@@ -8,66 +8,71 @@ screenshots:
 
   - filename: bloom.jpg
     title: Bloom effect
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: powerupshells.jpg
     title: Powerup shells effect
+    feature: Modern Graphics
 
   - filename: rich_menus.jpg
     title: Rich mouse-driven menus
 
   - filename: underwater.jpg
     title: Underwater effects
+    feature: Modern Graphics
 
   - filename: shambler_cutf_bluefog.jpg
     title: Special effects
+    feature: Modern Graphics
 
   - filename: drawflat_fastturb_multiview.jpg
     title: Solid textures, multiview
-    tag: graphics
+    feature: Enhanced demo/QTV playback
 
   - filename: lightning_sparks.jpg
     title: Lightning sparks
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: fog_fogsky_grenadetrail_flame.jpg
     title: Grenade trail, fog
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: nailtrail_muzzleflash.jpg
     title: Nail trail, muzzle flash
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: nailtrail_plasma.jpg
     title: Plasma nail-trail
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: part_zap.jpg
     title: Zap particles
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: partteleport_partshotgun_partblood.jpg
     title: Teleport effects
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: explosion_rain_shockwave.jpg
     title: Explosion shockwave
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: surface_lava.jpg
     title: Boiling lava
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: surface_slime.jpg
     title: Slime fumes
-    tag: graphics
+    feature: Modern Graphics
 
   - filename: torches_fog_nailsparks.jpg
     title: Torches, nail sparks
+    feature: Modern Graphics
 
   - filename: damagestats_bloodpart_motiontrails.jpg
     title: Damage stats
+    feature: Modern Graphics
 
   - filename: teamplay_hud_features.jpg
     title: Teamplay HUD
-    tag: customization
+    feature: Graphics customization
