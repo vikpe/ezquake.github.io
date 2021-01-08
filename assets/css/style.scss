@@ -62,6 +62,22 @@ main {
 #app-splash-inner {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0));
 
+  a {
+    display: block;
+    width: 480px;
+    margin: 0 auto;
+    box-shadow: black 0 0 10px;
+
+    &:hover {
+      box-shadow: yellow 0 0 16px;
+    }
+  }
+
+  img {
+    display: block;
+    border: 1px solid black;
+  }
+
   .hero {
     background: none;
     text-shadow: black 1px 1px;
