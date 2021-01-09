@@ -1,7 +1,10 @@
 ---
 layout: default
-title: About ezQuake
 tab: About
+---
+
+# About ezQuake
+
 ---
 
 ## History
@@ -9,24 +12,27 @@ tab: About
 
 The ezQuake project started in August 2004 as a derivative of FuhQuake, and today is the dominant QuakeWorld client for those playing online competitively.
 
+---
+
 ## Credits
 
-* Parent projects: A Nourai (fuh), Anton Gavrilov (Tonik), <a href="https://www.idsoftware.com/">id Software</a>
-* Founders: <a href="http://robert.gust-bardon.org/">Robert Gust-Bardon</a>, David Balcom (hexum)<
-* Project admins: <a href="https://github.com/jite/">dimman</a>, <a href="https://github.com/meag/">meag</a>
-* Project developers: <a href="https://github.com/jite/">dimman</a>, <a href="https://github.com/meag/">meag</a>
-* Former project admins: <a href="https://github.com/johnnycz/">JohnNy_cz</a>, Hetman
-* Former developers: AAS, biomass, bliP, BorisU, Cokeman, cuky, disconnect, dkure, Electro, [EZH] FAN, Fausto, hdworak, hexum, <a href="https://github.com/hifi">hifi</a>, <a href="https://github.com/johnnycz/">JohnNy_cz</a>, jogi, Jozsef, Moodles, Oldman, <a href="http://www.daddied.com">Oppy</a>, povohat, <a href="https://github.com/qqshka">qqshka</a>, Tanelii, Tei, Tonik, <a href="https://github.com/fzwoch">Tuna</a>, Tyrannos, Up2nOgOoD, VVD
-* Big thanks to: Spike, bigfoot, David Wiberg, Todd C. Miller, zxc, HyperNewbie, r00k, avirox, raz0, Dirk, quakeforge, mh, sputnikutah, localghost
-* Major ports: ezQuake incorporates numerous features from the following engines
+* **Parent projects**: A Nourai (fuh), Anton Gavrilov (Tonik), <a href="https://www.idsoftware.com/">id Software</a>
+* **Founders**: <a href="http://robert.gust-bardon.org/">Robert Gust-Bardon</a>, David Balcom (hexum)<
+* **Project admins**: <a href="https://github.com/jite/">dimman</a>, <a href="https://github.com/meag/">meag</a>
+* **Project developers**: <a href="https://github.com/jite/">dimman</a>, <a href="https://github.com/meag/">meag</a>
+* **Former project admins**: <a href="https://github.com/johnnycz/">JohnNy_cz</a>, Hetman
+* **Former developers**: AAS, biomass, bliP, BorisU, Cokeman, cuky, disconnect, dkure, Electro, [EZH] FAN, Fausto, hdworak, hexum, <a href="https://github.com/hifi">hifi</a>, <a href="https://github.com/johnnycz/">JohnNy_cz</a>, jogi, Jozsef, Moodles, Oldman, <a href="http://www.daddied.com">Oppy</a>, povohat, <a href="https://github.com/qqshka">qqshka</a>, Tanelii, Tei, Tonik, <a href="https://github.com/fzwoch">Tuna</a>, Tyrannos, Up2nOgOoD, VVD
+* **Big thanks to**: Spike, bigfoot, David Wiberg, Todd C. Miller, zxc, HyperNewbie, r00k, avirox, raz0, Dirk, quakeforge, mh, sputnikutah, localghost
+* **Major ports**: ezQuake incorporates numerous features from the following engines
   * AMFQuake (by Vultwah)
   * <a href="http://fte.triptohell.info/">FTEQW</a> (by Spike)
   * <a href="http://fodquake.net/">fodquake</a> (by bigfoot)
   * MQWCL (by Azazello)
+  
+---
 
 ## Contribute
-
-> ezQuake is constantly evolving, and there are a number of ways to contribute.
+<p class="subtitle">ezQuake is constantly evolving, and there are a number of ways to contribute.</p>
 
 ### Write some code
 The central repository for ezQuake is stored on <a href="https://github.com/ezQuake/ezquake-source">GitHub</a>.  ezQuake is open to new developers, feel free to experiment and submit pull requests.
