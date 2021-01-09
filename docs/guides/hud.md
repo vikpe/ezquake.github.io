@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Heads up display (HUD)
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 ### HUD Editor
 

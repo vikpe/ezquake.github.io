@@ -5,7 +5,7 @@ tab: Documentation
 
 ## External Textures
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 ### 24-bit Textures
 

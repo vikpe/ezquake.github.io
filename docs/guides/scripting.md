@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Scripting
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 ### Basic scripting
 

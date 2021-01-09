@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Frag Tracker
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 The tracker allows you to view brief info about 'hot' fragging action going on in game, for example 'Foobar is on killing spree, 10 frags in a row!'
 

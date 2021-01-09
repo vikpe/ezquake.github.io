@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Teamplay macros
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 You can use Qizmo teamplay %-functions in ezQuake, e.g. %l - location, %a - armor, %b - best weapon, etc.
 

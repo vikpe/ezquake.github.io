@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Multiview
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 This client adds a multiview component to mvd playback. Up to four views can be displayed at once. Multiview support was implemented to this client by Oppy.
 

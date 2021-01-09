@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Fonts/charsets
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 This is a guide that will tell you how to make charsets look good. Made by fuh.
 

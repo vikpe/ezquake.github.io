@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Voice Support
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 ezQuake contains in-game voice support, ported from FTEQW.
 

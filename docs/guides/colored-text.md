@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Colored text
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 ezQuake supports setting the color of text in strings. This is often used to make certain elements stand out in team messages.
 

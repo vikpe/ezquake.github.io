@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Independent Physics
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 The number of rendered frames per second (FPS) used to be limited in QuakeWorld by the server settings.
 For example most QuakeWorld servers run at 77fps, so you couldn't have more than 77fps at the client.

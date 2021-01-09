@@ -5,7 +5,7 @@ tab: Documentation
 
 ## Weapon Scripts
 
-###### (this topic was ported quickly from old documentation and needs updated)
+(this topic was ported quickly from old documentation and needs updated)
 
 In older QuakeWorld clients you had to write a script (longer series of bind and alias commands) that automatically hides a weapon when you don't use it. Players do this because they don't want to give their best weapon to the enemy easily if they get killed.
 That means when you press a button to select a weapon, it doesn't get immediately switched. That happens right before the moment you want to shoot it - your current weapon gets switched with the desired weapon and you immediately shoot from it without any delay.
