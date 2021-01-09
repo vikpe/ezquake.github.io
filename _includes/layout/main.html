@@ -20,20 +20,10 @@
         <div class="mt-3 mx-5">
             <div class="columns is-vcentered is-justify-content-space-between">
                 <div class="column is-narrow">
-                    <nav class="breadcrumb " aria-label="breadcrumbs">
-                        <ul>
-                            <li><a href="{{ '/docs/' | relative_url }}">Documentation</a></li>
-                            {% if page.url contains "/docs/guides/" %}
-                            <li class="is-active"><a href="#">Guides</a></li>
-                            {% elsif page.url contains "/docs/vars/" %}
-                            <li class="is-active"><a href="#">Variables</a></li>
-                            {% endif %}
-                            <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
-                        </ul>
-                    </nav>
+                    {% include breadcrumbs.html %}
                 </div>
                 <div class="column is-narrow">
-                    <input type="text" class="input" id="docSearchInput" placeholder="Search docs">
+                    {% include doc_search.html %}
                 </div>
             </div>
         </div>

@@ -8,6 +8,17 @@ html {
 body {
   font-family: Roboto, BlinkMacSystemFont, -apple-system, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+/*
+
+.navbar-brand, .navbar-start {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+*/
+
+.navbar img {
+  fill: white;
+}
 
 footer.footer {
   border-top: 1px solid #ddd;
