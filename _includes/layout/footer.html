@@ -4,16 +4,16 @@
 
             <div class="columns is-vcentered is-justify-content-center">
                 {% for item in site.data.navigation.main | limit: 3 %}
-                <div class="column is-narrow is-centered">
+                <div class="column is-narrow">
                     <a href="{{item.url | relative_url}}">{{item.title}}</a>
                 </div>
                 {% endfor %}
-                <div class="column is-narrow is-centered">
+                <div class="column is-narrow">
                     <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/ezquake_logo.png' | relative_url }}"
                                                             alt="ezQuake" width="48"></a>
                 </div>
                 {% for item in site.data.navigation.main | offset: 3 %}
-                <div class="column is-narrow is-centered">
+                <div class="column is-narrow">
                     <a href="{{item.url | relative_url}}">{{item.title}}</a>
                 </div>
                 {% endfor %}
