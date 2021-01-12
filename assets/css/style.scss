@@ -8,6 +8,7 @@ html {
 body {
   font-family: Roboto, BlinkMacSystemFont, -apple-system, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+
 /*
 
 .navbar-brand, .navbar-start {
@@ -29,12 +30,18 @@ footer.footer {
   }
 }
 
+// Font Awesome overrides
+.fa {
+  width: 1.28571429em;
+  text-align: center
+}
+
 // Layout
-header {
+#app-header {
   background-color: #363636;
 }
 
-main {
+#app-main {
   background-color: #fff;
 }
 
