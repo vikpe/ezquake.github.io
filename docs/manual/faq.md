@@ -12,7 +12,7 @@ tab: Documentation
 
 ## What do I need in order to play QW?
 
-A great place to start is [nQuake](http://www.nquake.com/) . This is a pack that contains everything you need in order to play (ezQuake client, configs, maps, textures, tools, scripts, Frogbots, documentation and more). Put together to supply beginners as well as veterans with an easy-to-use QuakeWorld installation.
+A great place to start is [nQuake](https://www.nquake.com//) . This is a pack that contains everything you need in order to play (ezQuake client, configs, maps, textures, tools, scripts, Frogbots, documentation and more). Put together to supply beginners as well as veterans with an easy-to-use QuakeWorld installation.
 ## I need a good cfg, and what commands should I know?
 
 Go to the [configs section](configs.md) to find an easy-to-use cfg. To see a list of important commands, [go here](important_commands.md) .

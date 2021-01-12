@@ -12,7 +12,7 @@ tab: Documentation
 
 In order to be able to play Quake on the Internet you have to download and install QuakeWorld, which was designed specifically for that purpose - Internet play. Basically QuakeWorld is a new client that improves the netcode of Quake dramatically and also adds some new features like player prediction and [bunnyhopping](help/jumping.xml) .
 
-Since finding and configuring all the files you need to play QW can be quite a pain for newcomers, there is a solution. [nQuake](http://www.nquake.com/) is a handy installer that contains basically everything you need in order to play: [ezQuake client](http://ezQuake.SF.net/) , PAK-files, maps, textures, locs, scripts and a lot more. All put together to supply beginners as well as veterans with an easy-to-use QW installation. Get [nQuake](http://www.nquake.com/) now!
+Since finding and configuring all the files you need to play QW can be quite a pain for newcomers, there is a solution. [nQuake](https://www.nquake.com//) is a handy installer that contains basically everything you need in order to play: [ezQuake client](http://ezQuake.SF.net/) , PAK-files, maps, textures, locs, scripts and a lot more. All put together to supply beginners as well as veterans with an easy-to-use QW installation. Get [nQuake](https://www.nquake.com//) now!
 ## Step 2: Configuring
 
 nQuake comes together with configs that use the most common and optimized settings. However there might be a few things you may want to change to suit your needs, like movement/weapon keys, sensitivity, graphics settings etc.

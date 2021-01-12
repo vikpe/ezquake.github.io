@@ -12,7 +12,7 @@ Before we move on to the core of this guide, it is important that you know some 
 
 ## Guides and forums
 
-- ** [nQuake](http://www.nQuake.com/) ** Complete Quakeworld package. Contains everything you need to play (except pak1.pak) with good default configs, textures and other game related files which are not available in the regular ezQuake package.
+- ** [nQuake](https://www.nquake.com//) ** Complete Quakeworld package. Contains everything you need to play (except pak1.pak) with good default configs, textures and other game related files which are not available in the regular ezQuake package.
 - ** [ezQuake](http://ezQuake.SF.net/) ** The ezQuake website has documentation that explains most of ezQuake's features, all the necessary files and more. There is also a RFE (Request FeaturE) page and a bug report page.
 - ** [ezQuake Documentation](http://ezQuake.SF.net/docs/) ** Explains all of ezQuake's variables, console commands, command line parameters and more.
 - ** [QuakeWorld.nu Forum](http://www.quakeworld.nu/forum/) ** For any questions related to QW. See the Help or Client Talk sections.
